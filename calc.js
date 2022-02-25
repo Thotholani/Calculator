@@ -22,8 +22,9 @@ for (var i = 0; i < buttons.length; i++) {
             recordValue(oldValue);
             // reset digit to zero
             oldValue = "";
-            displayValue(buttonPressed);
-            if (buttonPressed == "=") {
+            if (buttonPressed == "+") {
+                displayValue(buttonPressed);
+            } else if (buttonPressed == "=") {
                 calculate();
             }
         }
